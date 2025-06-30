@@ -1,9 +1,5 @@
-"use client"
-
-/**
- * TodoItem component for displaying individual todo items with CRUD actions
- */
 export function TodoItem({ todo, onEdit, onDelete }) {
+  
   const getPriorityColor = (priority) => {
     switch (priority.toLowerCase()) {
       case "high":

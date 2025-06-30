@@ -1,5 +1,3 @@
-"use client"
-
 import { useState, useEffect } from "react"
 import { TodoItem } from "../components/todo-item"
 import { TodoForm } from "../components/todo-form"
@@ -7,9 +5,6 @@ import { Header } from "../components/header"
 import { Footer } from "../components/footer"
 import { todoService } from "../services/todoService"
 
-/**
- * Main TodosPage component that fetches and displays todos with CRUD functionality
- */
 export default function TodosPage() {
   const [todos, setTodos] = useState([])
   const [loading, setLoading] = useState(true)
